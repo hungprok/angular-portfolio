@@ -1,1 +1,493 @@
-<h1>Landing Page!</h1>
+<div class="container">
+  <div class="nav row">
+    <div class="col-7 logo">
+      <div><a routerLink="/home">HUNG^~</a></div>
+      <div><a routerLink="/home">NGUYEN</a></div>
+    </div>
+    <div class="col-5">
+      <div class="d-flex justify-content-between nav-items">
+        <div class="nav-item" *ngFor="let item of menuItems"><a class="nav-link"
+            [href]="item.href"><span>{{item.name}}</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="120" class="welcome-section">
+    <section id="home-section">
+      <p class="welcome-text">Hello strangers!</p>
+      <div class='text-white pr-3 pt-5 d-flex' style='height: 95v;'>
+        <div class='pl-2' style='color: grey; font-size: 60px; line-height: 58px; word-spacing: 15px'>
+          <p>I am a<span style=' font-weight: bold ' class="typewrite red text-white" data-period={2000}
+              data-type='[ " Business Analyst"] '></span>
+          </p>
+          <p>
+            <span style='font-weight: bold ' class="typewrite red text-white" data-period={2000}
+              data-type='[ " Full-stack Developer"] '></span> also
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-section">
+      <div class="container text-center" style="margin-top: 10vh">
+        <h1 class="shadow">About me</h1>
+        <h2 class="text-warning mb-4">About Me</h2>
+        <h4>My full name is <span class="text-warning">Nguyễn Hưng</span> - yup, you read it right, it has only two
+          words.
+          <br>I love doing business and also be passionate in creating wonderful softwares products.<br>Therefore,
+          to
+          achieve both dreams, I decided to become a <span class="text-warning">Product Owner.</span>
+          <br>Being a <span class="text-warning"> Business Analyst</span> and <span class="text-warning"> Full-stack
+            Developer</span> is best way to do it.
+        </h4>
+      </div>
+      <div class="mt-md-3 text-center">
+        <p><a href="https://drive.google.com/u/0/uc?id=1saEZa7D9-LOyCsKO7E47wjWybXDGxYA1&export=download"
+            class="btn btn-outline-warning btn-download">Download CV</a></p>
+      </div>
+    </section>
+
+    <section id="resume-section">
+      <div>
+        <div class="text-center">
+          <h1 class="shadow">Resume</h1>
+          <h2 class="text-warning">Resume</h2>
+          <p>My journey has been several years. Let's take a look at what I have done!</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 left">
+            <div class="resume-wrap">
+              <h5 class="date">Full-stack Software Trainee</h5>
+              <h5>CODER SCHOOL</h5>
+              <span class="position">February - May, 2020</span>
+              <p class="mt-4">-Front-end: HTML5, CSS3, JavaScript, ReactJS, UI/UX Design
+                <br>-Back-end: NoSQL, MongoDB, Express, Handle Bar, Node.js[. . .]
+              </p>
+            </div>
+            <div class="resume-wrap">
+              <h5 class="date">Talent Acquisition</h5>
+              <h5>INTEL PRODUCTS VIETNAM</h5>
+              <span class="position">February - July, 2018</span>
+              <p class="mt-4">Fluently using recruitment platforms Intel has developed (website, Smashfly, Workday) to
+                hire more then 60 new engineers in 6 months</p>
+            </div>
+            <div class="resume-wrap">
+              <h5 class="date">Student</h5>
+              <p>Busines Administration
+              </p>
+              <h5>INTERNATIONAL UNIVERSITY</h5>
+              <h6>Vietnam National University of Ho Chi Minh city</h6>
+              <span class="position">2014 - 2019</span>
+              <span class="position"></span>
+              <p class="mt-4">. . . the first public school in Vietnam to use English as the official language in both
+                teaching and learning.</p>
+            </div>
+          </div>
+          <div class="col-md-6 right">
+            <div class="resume-wrap">
+              <h5 class="date">Business Analyst</h5>
+              <h5>CAREERBUILDER VIETNAM</h5>
+              <span class="position">October, 2018 - November, 2019</span>
+              <p class="mt-4">Be in charge of deploying and maintaining software product (Recruitment system) for over
+                200
+                clients - including 80 new contracts in 2019</p>
+            </div>
+            <div class="resume-wrap">
+              <h5 class="date">Talent Acquisition</h5>
+              <h5>TMA SOLUTIONS</h5>
+              <span class="position">October, 2017 - January, 2018</span>
+              <p class="mt-4">Search and interview to evaluate candidate. Manage TMA Solutions’ candidates data system.
+                Collaborate with project managers to obtain recruitment information and requirements. [. . .]</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="https://drive.google.com/u/0/uc?id=1saEZa7D9-LOyCsKO7E47wjWybXDGxYA1&export=download"
+                class="btn btn-outline-warning btn-download">Download CV</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-section">
+      <div>
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="shadow">Skills</h1>
+          <h2 class="mb-4 text-warning">My Skills</h2>
+          <p>The skill set I have developed over the years at school and at works is quite diverse</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px" src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"
+                    alt=""></span> HTML5
+              </h3>
+              <div class="progress">
+                <div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100" style="width:85%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px"
+                    src="https://img.pngio.com/buy-adobe-education-contact-multiblue-and-receive-discounts-for-logo-adobe-illustrator-png-600_600.png"
+                    alt=""></span> Adobe Illustrator</h3>
+              <div class="progress">
+                <div class="progress-bar color-1" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px"
+                    src="https://icons-for-free.com/iconfiles/png/512/award+badge+css+css3+reward+trophy+icon-1320184828426835743.png"
+                    alt=""></span> CSS3</h3>
+              <div class="progress">
+                <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0OBTiiC01QwPZ0YrMy_SEvScoVL5pnlgTeWwHh2w3c66k5Tgp&usqp=CAU"
+                    alt=""></span> Adobe Photoshop</h3>
+              <div class="progress">
+                <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100" style="width:65%">
+                  <span>Decent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px"
+                    src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
+                    alt=""></span> Java Script</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3>Communication & Presentation</h3>
+              <div class="progress">
+                <div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px" src="https://getdrawings.com/free-icon/react-icon-69.png" alt=""></span>
+                ReactJS</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3><span><img height="35px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/United-kingdom_flag_icon_round.svg/1200px-United-kingdom_flag_icon_round.svg.png"
+                    alt=""></span> English</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:85%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px"
+                    src="https://hoctapit.com/wp-content/uploads/2018/01/nodejs-logo-e1497443346889.png" alt=""></span>
+                NodeJS</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px" src="https://ipp.nl/wp-content/uploads/2019/09/Team-icon.png" alt=""></span>
+                Teamwork</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+              <h3> <span><img height="35px" src="https://stackjava.com/wp-content/uploads/2018/07/mongodb-250x250.png"
+                    alt=""></span> NoSQL (MongoDB)</h3>
+              <div class="progress">
+                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100" style="width:80%">
+                  <span>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects-section">
+      <div>
+        <div>
+          <div class="text-center">
+            <h1 class="shadow">Projects</h1>
+            <h2 class="mb-4 text-warning">My Projects</h2>
+            <p>These are projects that I have completed recently both at bootcamp and at workplace</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="project img d-flex justify-content-center align-items-center"
+              style="background-image: url(assets/img/chat-app.png);">
+              <div class="overlay"></div>
+              <div class="text text-center">
+                <h3><a href="https://blissful-aryabhata-0d7ed3.netlify.app/">CHAT APP</a></h3>
+                <div class="btn-group">
+                  <a href="https://github.com/hungprok/chat-app-frontend.git"><button type="button"
+                      class="btn btn-outline-warning">GIT FRONTEND</button>
+                  </a>
+                  <a href="https://github.com/hungprok/chat-app-backend.git"><button type="button"
+                      class="btn btn-outline-warning">GIT BACKEND</button>
+                  </a>
+                </div>
+                <p><strong>Description: </strong>A real-time chat app using ReactJS for
+                  frontend
+                  and NodeJS for backend with MongoDB (using Mongoose) as database platform. Socket.io is also
+                  applied</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project img d-flex justify-content-center align-items-center"
+              style="background-image: url(https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5e7c7284984d660009d898c9/screenshot.png);">
+              <div class="overlay">
+              </div>
+              <div class="text text-center p-4">
+                <h3>
+                  <a href="https://nguyenhung-tictactoe.netlify.com/">TIC TAC TOE GAME</a>
+                </h3>
+                <div class="btn-group">
+                  <a href="https://nguyenhung-tictactoe.netlify.com/">
+                    <button type="button" class="btn btn-outline-warning">DEMO</button>
+                  </a>
+                  <a href="https://github.com/hungprok/Tictactoe.git">
+                    <button type="button" class="btn btn-outline-warning">GITHUB</button>
+                  </a>
+                </div>
+                <p><strong>Description: </strong>A project using ReactJS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5e6f00d705dd1400081f7fde/screenshot.png);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>
+                  <a href="https://funnyordie.netlify.app/">TWITTER CLONE</a>
+                </h3>
+                <div class="btn-group">
+                  <a href="https://funnyordie.netlify.app/">
+                    <button type="button" class="btn btn-outline-warning">DEMO</button>
+                  </a>
+                  <a href="https://github.com/hungprok/Twitter.git">
+                    <button type="button" class="btn btn-outline-warning">GITHUB</button>
+                  </a>
+                </div>
+                <p><strong>Description: </strong>A Twitter-like social platform using pure Javascript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(assets/img/meme-maker.png);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>MEME MAKER
+                </h3>
+                <div class="btn-group">
+                  <a href="https://frozen-journey-76314.herokuapp.com/">
+                    <button type="button" class="btn btn-outline-warning">DEMO</button>
+                  </a>
+                  <a href="https://github.com/hungprok/meme-maker.git">
+                    <button type="button" class="btn btn-outline-warning">GITHUB</button>
+                  </a>
+                </div>
+                <p><strong>Description: </strong>An meme maker web app using NodeJS for back-end
+                  with
+                  Express framework and using Handlebars as view engine. This app also uses Jimp to modify text on
+                  images</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(assets/img/cinemax.png);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>CINEMAX - MOVIE PAGE</h3>
+                <div>
+                  <a href="https://nguyenhung-cinemax-cloneimdb.netlify.com/" class="btn btn-outline-warning m-2"
+                    style="background-color: transparent;">DEMO</a>
+                  <a href="https://github.com/hungprok/MoviePage.git" class="btn btn-outline-light m-2"
+                    style="background-color: transparent;">GITHUB</a>
+                  <p class="text-white"><strong>Description: </strong>Application of ReactJS combined with RESTful API
+                    from MovieDB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5e65b2657a9ac8af52595676/screenshot.png);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>INVASION OF ALIENS GAME
+                </h3>
+                <div>
+                  <a href="https://invasion-of-aliens.netlify.com/" class="btn btn-outline-warning m-2"
+                    style="background-color: transparent;">DEMO</a>
+                  <a href="https://github.com/hungprok/Canvas-Game.git" class="btn btn-outline-warning m-2"
+                    style="background-color: transparent;">GITHUB</a>
+                  <p class="text-white"><strong>Description: </strong>Canvas game using pure JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+                  style="background-image: url(assets/img/todo-list.png);">
+                  <div class="overlay"></div>
+                  <div class="text text-center p-4">
+                    <h3>
+                      TODO LIST</h3>
+                    <div>
+                      <a href="https://nguyenhung-todolist.netlify.app/" class="btn btn-outline-warning m-2"
+                        style="background-color: transparent;">DEMO</a>
+                      <a href="https://github.com/hungprok/ToDoList.git" class="btn btn-outline-warning m-2"
+                        style="background-color: transparent;">GITHUB</a>
+                      <p class="text-white"><strong>Description: </strong>This is a todolist app using pure JavaScript
+                        and
+                        store the list in local storage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+                  style="background-image: url(assets/img/rock-paper-scissor.png);">
+                  <div class="overlay"></div>
+                  <div class="text text-center p-4">
+                    <h3>
+                      ROCK PAPER SCISSOR</h3>
+                    <div>
+                      <a href="https://nguyen-hung-rockpaperscissors.netlify.app/" class="btn btn-outline-warning m-2"
+                        style="background-color: transparent;">DEMO</a>
+                      <a href="https://github.com/hungprok/RockPaperScissors.git" class="btn btn-outline-warning m-2"
+                        style="background-color: transparent;">GITHUB</a>
+                      <p class="text-white"><strong>Description: </strong>Rock Paper Scissors game using ReactJS
+                        framework. It can display dynamically the image based on your choices as well as result of the
+                        game.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="note-section">
+      <div class="text-center">
+        <h2 class="text-warning">I'm <span>available</span> for freelancing too!</h2>
+        <p>The experience of giving your best shot in everything is priceless!</p>
+        <h2 class="text-warning">just leave me a message!</h2>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="container">
+  <div id="footer">
+    <div class="row">
+      <div class="col-5 left">
+        <h2>Social</h2>
+        <div class="mt-2"><a href="https://www.behance.net/hungnguyene6f8">Behance<i
+              class="fa-brands fa-square-behance"></i></a>
+        </div>
+        <div class="mt-2"><a href="https://github.com/hungprok">Github<i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="mt-2"><a href="https://www.linkedin.com/in/hung-nguyen-bb9b05143/">Linkedin<i
+              class="fa-brands fa-linkedin"></i></a></div>
+      </div>
+      <div class="col-7 right">
+        <div class="mb-6">
+          <h2>Leave me a note</h2>
+          <div class="mb-3">
+            <div class="mt-2">
+              <span><i class="fa-solid fa-location-dot mr-2"></i>Go Vap district, Ho Chi Minh city, Vietnam</span>
+            </div>
+            <div class="mt-2"><a href="mailto:hungnguyen101196@gmail.com"><i
+                  class="fa-solid fa-envelope"></i>hungnguyen101196@gmail.com</a></div>
+            <div class="mt-2">
+              <a href="https://join.skype.com/invite/RfhWoTbtXoCg"><i class="fa-brands fa-skype"></i>hung_nguyen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
